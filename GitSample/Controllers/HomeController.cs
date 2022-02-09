@@ -12,19 +12,38 @@ namespace GitSample.Controllers
     {
         public IActionResult Index()
         {
+            ViewData["Message"] = "Index.";
+
             return View();
         }
 
         public IActionResult About()
         {
-            ViewData["Message"] = "Your application description page.";
+            
+
+            var data = new CoffeeShopData();
+
+           // var coffeeShops = data.ShopData.LoadCoffeeShops();
+            string shops = string.Empty;
+            foreach (var coffeeShop in data.GetData())
+            {
+                shops += coffeeShop.Location + coffeeShop.BeansInStockInKg + " \n";
+               
+            }
+
+            ViewData["Message"] = shops;
+
 
             return View();
         }
 
         public IActionResult Contact()
         {
+
+            
             ViewData["Message"] = "Your contact page.";
+
+            
 
             return View();
         }
