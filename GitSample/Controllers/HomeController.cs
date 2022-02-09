@@ -33,7 +33,6 @@ namespace GitSample.Controllers
 
             ViewData["Message"] = shops;
 
-
             return View();
         }
 
