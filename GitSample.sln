@@ -3,7 +3,9 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.30225.117
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GitSample", "GitSample\GitSample.csproj", "{A8F2DA52-D6EB-49C5-BCD2-53FA5B086998}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "GitSample", "GitSample\GitSample.csproj", "{A8F2DA52-D6EB-49C5-BCD2-53FA5B086998}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BitSample.DataAccess", "BitSample.DataAccess\BitSample.DataAccess.csproj", "{2013695B-C881-4640-ADFC-B3AC6268C07C}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -15,6 +17,10 @@ Global
 		{A8F2DA52-D6EB-49C5-BCD2-53FA5B086998}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{A8F2DA52-D6EB-49C5-BCD2-53FA5B086998}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{A8F2DA52-D6EB-49C5-BCD2-53FA5B086998}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2013695B-C881-4640-ADFC-B3AC6268C07C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2013695B-C881-4640-ADFC-B3AC6268C07C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2013695B-C881-4640-ADFC-B3AC6268C07C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2013695B-C881-4640-ADFC-B3AC6268C07C}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
