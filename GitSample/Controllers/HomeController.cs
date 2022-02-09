@@ -18,16 +18,10 @@ namespace GitSample.Controllers
         }
 
         public IActionResult About()
-        {          
-
-            var data = new CoffeeShopData();
-           // var coffeeShops = data.ShopData.LoadCoffeeShops();
-            string shops = string.Empty;
-            foreach (var coffeeShop in data.GetData())
-            {
-                shops += coffeeShop.Location + coffeeShop.BeansInStockInKg + " \n";               
-            }
-
+        {
+            ICoffeeShopCommmandHandler commandHandler;
+            commandHandler = new CoffeeShopCommmandHandler();
+            var shops = commandHandler.HandleCommand();
             ViewData["Message"] = shops;
 
             return View();
@@ -50,5 +44,7 @@ namespace GitSample.Controllers
         {
             return View(new ErrorViewModel { RequestId = Activity.Current?.Id ?? HttpContext.TraceIdentifier });
         }
+
+        
     }
 }
